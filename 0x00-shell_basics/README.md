@@ -1,6 +1,7 @@
 # Tasks
 ### 0. Where am I?
 - Write a script that prints the absolute path name of the current working directory.
+    
     Example:
     ```
     $ ./0-current_working_directory
@@ -11,6 +12,7 @@
 
 ### 1. What’s in there?
 - Display the contents list of your current directory.
+    
     Example:
     ```
     $ ./1-listit
@@ -22,7 +24,9 @@
 
 ### 2. There is no place like home
 - Write a script that changes the working directory to the user’s home directory.
-    You are not allowed to use any shell variables
+    - You are not allowed to use any shell variables
+    
+    Example:
     ```
     julien@ubuntu:/tmp$ pwd
     /tmp
@@ -37,6 +41,7 @@
 
 ### 3. The long format
 - Display current directory contents in a long format
+    
     Example:
     ```
     $ ./3-listfiles
@@ -51,6 +56,7 @@
 
 ### 4. Hidden files
 - Display current directory contents, including hidden files (starting with .). Use the long format.
+    
     Example:
     ```
     $ ./4-listmorefiles
@@ -91,6 +97,7 @@
 
 ### 6. Welcome
 - Create a script that creates a directory named my_first_directory in the /tmp/ directory.
+    
     Example:
     ```
     $ ./6-firstdirectory
@@ -211,6 +218,7 @@ You can assume that the directory /tmp/u will exist when we will run your script
 
 ### 16. Clean Emacs
 - Create a script that deletes all files in the current working directory that end with the character ~.
+    
     Example:
     ```
     ubuntu@ip-172-31-63-244:/tmp/sym$ ls
@@ -257,6 +265,7 @@ You are only allowed to use two spaces (and lines) in your script, not more.
 
 ### 19. File type: School
 - Create a magic file school.mgc that can be used with the command file to detect School data files. School data files always contain the string SCHOOL at offset 0.
+
     Example:
     ```
     ubuntu@ip-172-31-63-244:/tmp/magic$ cp /bin/ls .
