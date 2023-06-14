@@ -1,2 +1,2 @@
 #!/bin/bash
-cat | tr [ABCDEFGHIJKLMNOPQRSTUVWXYZ] [NOPQRSTUVWXYZABCDEFGHIJKLM] | tr [abcdefghijklmnopqrstuvwxyz] [nopqrstuvwxyzabcdefghijklm]
+cat | tr '[ABCDEFGHIJKLMNOPQRSTUVWXYZ]' '[NOPQRSTUVWXYZABCDEFGHIJKLM]' | tr '[abcdefghijklmnopqrstuvwxyz]' '[nopqrstuvwxyzabcdefghijklm]' 
