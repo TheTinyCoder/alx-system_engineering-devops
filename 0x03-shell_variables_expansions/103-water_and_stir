@@ -1,2 +1,2 @@
 #!/bin/bash
-printf -v BESTCHOL $(($(echo $WATER | tr 'water' '01234') + $(echo $STIR | tr 'stir.' '01234'))) | echo $BESTCHOL | tr '01234567' 'bestchol'
+BESTCHOL=$(($(echo $WATER | tr 'water' '01234') + $(echo $STIR | tr 'stir.' '01234'))) | printf "%o\n" $BESTCHOL | tr '01234567' 'bestchol'
