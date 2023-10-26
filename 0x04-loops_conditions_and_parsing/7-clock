@@ -5,7 +5,7 @@ j=0
 while [ $j -lt 13 ]; do
 	echo $i
 	((i+=1))
-	if [ $i -eq 59 ]; then
+	if [ $i -eq 60 ]; then
 		((j+=1))
 		if [ $j -ne 13 ]; then
 			echo "Hour: $j"
