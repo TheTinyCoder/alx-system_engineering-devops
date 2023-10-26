@@ -3,13 +3,13 @@
 i=1
 j=0
 while [ $j -lt 13 ]; do
+	if [ $i -eq 1 ]; then
+		echo "Hour: $j"
+	fi;
 	echo $i
 	((i+=1))
 	if [ $i -eq 60 ]; then
 		((j+=1))
-		if [ $j -ne 13 ]; then
-			echo "Hour: $j"
-		fi;
 		((i=1))
 	fi;
 done
