@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# script that displays PID, along with the process name, of processes whose name contain the word bash without using ps
+top -bn 1 | awk '{print $1" "$12}' | grep "bash"
