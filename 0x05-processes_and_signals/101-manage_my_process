@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 # init script that manages 'manage_my_process' program
-path=$(pwd)
 start() {
-	exec -- "$path/manage_my_process"
-	echo $$ > /var/run/my_process.pid
+	./manage_my_process &
+	echo $! > /var/run/my_process.pid
 	echo "manage_my_process started"
 }
 
@@ -16,8 +15,8 @@ stop() {
 restart() {
 	pkill -f manage_my_process
 	rm -f /var/run/my_process.pid
-	exec -- "$path/manage_my_process"
-	echo $$ > /var/run/my_process.pid
+	./manage_my_process &
+	echo $! > /var/run/my_process.pid
 	echo "manage_my_process restarted"
 }
 
