@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# Extracts ip and status code from apache access file
-awk ' { print $1,$9 } ' < apache-access.log | sort | uniq -c | sort -nr
+# script that parses apache log file using awk, ordered from the greatest to the lowest number of occurrences
+awk '{ print $1" "$9 }' apache-access.log | sort | uniq -c | sort -gr
+
