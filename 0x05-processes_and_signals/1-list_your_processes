@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-# script that displays all processes in a user-oriented format
-ps -A u
+# script that displays all processes in a user-oriented format and shows process hierarchy
+ps -A -H u
