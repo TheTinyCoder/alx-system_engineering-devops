@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # configures an Ubuntu server to change hosts in hosts file
 cp /etc/hosts ~/hosts.new
-sed -i "/localhost$/s/^[^ ]*/127.0.0.2/" ~/hosts.new
-sed -i "/facebook.com$/s/^[^ ]*/8.8.8.8/" ~/hosts.new
+sed -i "/^127.0.0.1/s/^[^ ]*/127.0.0.2/" ~/hosts.new
+sed -i "/^157.240.11.35/s/^[^ ]*/8.8.8.8/" ~/hosts.new
 cp -f ~/hosts.new /etc/hosts
