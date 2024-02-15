@@ -1,16 +1,6 @@
 GET ALL DASHBOARDS:
 
-curl -X GET "https://api.datadoghq.com/api/v1/dashboard" -H "Accept: application/json" -H "DD-API-KEY: 50c61c66f71603aaf5a3192b0c22ca38" -H "DD-APPLICATION-KEY: 8c4d7a9085db543887078323a8fb6e8a7f5b37cb"
+curl -X GET "https://api.datadoghq.com/api/v1/dashboard" -H "Accept: application/json" -H "DD-API-KEY: <key>" -H "DD-APPLICATION-KEY: <value>"
 
-OUTPUT: 
 
-{"dashboards":[{"created_at":"2022-11-03T09:35:47.472600+00:00",
-"author_handle":"charawey@gmail.com",
-"is_read_only":false,"description":"",
-"title":"ALX Dashboard",
-"url":"/dashboard/j8b-kc5-vcb/alx-dashboard",
-"layout_type":"ordered",
-"deleted_at":null,
-"modified_at":"2022-11-03T09:36:50.455199+00:00",
-"id":"j8b-kc5-vcb"}]}
 
